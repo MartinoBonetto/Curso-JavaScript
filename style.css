@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: blue;
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+
+}
+.boton-menu.active{
+    background-color: white;
+    color: blue;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.boton-menu.active::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 white;
+}
+
+.boton-menu.active::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 white;
+}
+
+.bi-hand-index-thumb-fill,
+.bi-hand-index-thumb{
+    transform: rotateZ(90deg);
+}
+
+.boton-carrito{
+    margin-top: 2rem;
+}
+
+.texto {
+    color: black;
+    font-size: 0.85rem;
+}
+
+main{
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal{
+    color: blue;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.productos-detalles{
+    background-color: blue;
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem
+    ;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: white;
+    color: blue;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background-color .2s, color .2s;
+}
+
+.producto-agregar:hover{
+    background-color: blue;
+    color: white;
+}

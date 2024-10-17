@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,56 +31,38 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Su carrito</h2>
+            <h2 class="titulo-principal">Carrito</h2>
 
             <div class="contenedor-carrito">
 
-                <p class="carrito-vacio">Tu carrito esta vacio</p>
+                <p id="carritoVacio" class="carrito-vacio">Tu carrito esta vacio</p>
 
-                <div class="carrito-productos">
+                <div id="carritoProductos" class="carrito-productos">
 
-                    <div class="carrito-producto">
-                        <img src="./img/Ryzen5-3600.jpg" alt="">
-
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Ryzen 5 3600</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$115000</p>
-                        </div>
-                        <div class="carrito-prtducto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$115000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                    </div>
+                    <!--ESTO SE RELLENA CON JS-->
 
                 </div>
 
-                <div class="carrito-acciones">
+                <div id="carritoAcciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
-                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
                             <p>Total</p>
-                            <p id="total">$115000</p>
+                            <p id="total"></p>
                         </div>
-                        <button class="Carrito-acciones-total">Comprar</button>
+                        <button id="botonComprar" class="carrito-acciones-comprar">Comprar</button>
                     </div>
                 </div>
+                <p id="carritoComprado" class="carrito-comprado disabled">Muchas gracias por tu compra</p>
 
             </div>
 
         </main>
     </div>
 
+    <script src="carrito.js"></script>
 </body>
 
 </html>

@@ -18,17 +18,17 @@
 
             <nav>
                 <ul class="menu">
-                    <li><button class="boton-menu boton-categoria active"><i
+                    <li><button id="todos" class="boton-menu boton-categoria active"><i
                                 class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button></li>
-                    <li><button class="boton-menu boton-categoria"><i
-                                class="bi bi-hand-index-thumb"></i>Microprocesadores</button></li>
-                    <li><button class="boton-menu boton-categoria"><i
+                    <li><button id="procesadores" class="boton-menu boton-categoria"><i
+                                class="bi bi-hand-index-thumb"></i>Procesadores</button></li>
+                    <li><button id="gabinetes" class="boton-menu boton-categoria"><i
                                 class="bi bi-hand-index-thumb"></i>Gabinetes</button></li>
-                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Memorias</button></li>
-                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Placas de
+                    <li><button id="memorias" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Memorias</button></li>
+                    <li><button id="placasdevideo" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Placas de
                             video</button></li>
                     <li><a class="boton-menu boton-carrito" href="carrito.html"><i class="bi bi-cart"></i>Carrito
-                            <span class="numero">0</span></a></li>
+                            <span id="numero" class="numero">0</span></a></li>
                 </ul>
             </nav>
 
@@ -39,40 +39,9 @@
         </aside>
         
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos">
-                <div class="productos">
-                    <img class="producto-img" src="./img/Ryzen5-3600.jpg" alt="">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Ryzen 5 3600</h3>
-                        <p class="producto-precio">$115000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="productos">
-                    <img class="producto-img" src="./img/Ryzen5-3600.jpg" alt="">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Ryzen 5 3600</h3>
-                        <p class="producto-precio">$115000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="productos">
-                    <img class="producto-img" src="./img/Ryzen5-3600.jpg" alt="">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Ryzen 5 3600</h3>
-                        <p class="producto-precio">$115000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="productos">
-                    <img class="producto-img" src="./img/Ryzen5-3600.jpg" alt="">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Ryzen 5 3600</h3>
-                        <p class="producto-precio">$115000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
+            <h2 class="titulo-principal" id="tituloPrincipal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!--ESTO SE RELLENA CON JAVASCRIPT-->
             </div>
         </main>
     </div>
